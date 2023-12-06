@@ -389,7 +389,7 @@ class DeleteTenantUser(BaseCase):
     edit_company = ("(//*[name()='svg'][@role='img'])[13]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
-    edit_user = ("(//*[name()='svg'][@role='img'])[21]")
+    edit_user = ("(//*[name()='svg'][@role='img'])[25]")
     delete_user = ("//button[normalize-space()='Delete']")
     delete_user_confirmation = ("//body/div[@role='dialog']/div/div[1]")
     delete_user_confirm_button = ("//button[normalize-space()='Confirm']")
@@ -833,7 +833,7 @@ class ResendVerificationTenant(BaseCase):
     notification = ("//div[@role='alert']")
     notification_close = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
     edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[23]")
-    resend_verification = ("(//*[name()='svg'][@role='img'])[24]")
+    resend_verification = ("(//*[name()='svg'][@role='img'])[27]")
     confirm_resend = ("//button[normalize-space()='Confirm']")
     success_notification = ("(//div[@role='alert'])[1]")
 

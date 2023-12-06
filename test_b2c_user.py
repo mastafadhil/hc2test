@@ -7,7 +7,7 @@ from faker.providers import automotive
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-## Run "pytest test_b2c_user.py --var1='liraxe7616@hapincy.com' --var2='@Bcd1234' --dashboard --html=report_test-server_b2c_user.html --reruns=3"
+## Run "pytest test_b2c_user.py --var1='refap66145@elixirsd.com' --var2='@Bcd1234' --dashboard --html=report_test-server_b2c_user.html --reruns=3"
 ## this script is to be used with Tenant Exec only
 ## features tested
 ## single risk check, bulk risk check, create/delete tenant user, transfer/withdraw credit on tenant user,
@@ -477,7 +477,7 @@ class InternalBulkCheck(BaseCase):
     bulk_check_submit_button = ("//button[@type='submit']")
     bulk_check_success_notification = ("//div[@role='alert']")
     dashboard_button = ("(//button[normalize-space()='Dashboard'])[1]")
-    submitted_names = ("(//td[@role='cell'][normalize-space()='3'])[1]")
+    submitted_names = ("//th[normalize-space()='Submitted Names']")
     
 
     def open_homepage(self):
@@ -683,12 +683,12 @@ class TransactionHistory(BaseCase):
     top_period = ("//th[normalize-space()='Period']")
     top_credit_used = ("//th[normalize-space()='Total Credit Used']")
     top_history = ("//th[normalize-space()='History']")
-    download_history_1 = ("(//*[name()='svg'][@role='img'])[10]")
+    download_history_1 = ("//td[@role='cell']//a//*[name()='svg']")
     top_category = ("//th[normalize-space()='Category']")
     top_credits = ("//th[normalize-space()='Credits']")
     top_description = ("//th[normalize-space()='Description']")
     top_performed_by = ("//th[normalize-space()='Performed By']")
-    download_history_2 = ("//tbody/tr[1]/td[2]/a[1]//*[name()='svg']")
+    download_history_2 = ("//td[@role='cell']//a//*[name()='svg']")
     history_tab2 = ("//a[normalize-space()='History']")
 
     def open_homepage(self):

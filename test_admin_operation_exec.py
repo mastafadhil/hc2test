@@ -421,7 +421,7 @@ class createUsercompany(BaseCase):
     companies_button = ("//a[@data-rb-event-key='/app/companies']")
     create_company_button  = ('body > div:nth-child(2) > div:nth-child(1) > main:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)')
     company_name = ("input[name='tenant_name']")
-    edit_company = ("(//*[name()='svg'][@role='img'])[19]")
+    edit_company = ("(//*[name()='svg'][@role='img'])[21]")
     users_button = ("//button[normalize-space()='Users']")
     create_user_company_button = ("//a[normalize-space()='User']")
     user_company_username = ("//input[@name='email']")
@@ -667,7 +667,7 @@ class DeleteTenantUser(BaseCase):
     companies_button = ("//a[@data-rb-event-key='/app/companies']")
     create_company_button  = ('body > div:nth-child(2) > div:nth-child(1) > main:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1)')
     company_name = ("input[name='tenant_name']")
-    edit_company = ("(//*[name()='svg'][@role='img'])[19]")
+    edit_company = ("(//*[name()='svg'][@role='img'])[21]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
     edit_user = ("(//*[name()='svg'][@role='img'])[26]")
@@ -773,7 +773,7 @@ class TransferWithdrawCredit2(BaseCase):
     back_button = ("//a[normalize-space()='Back']")
     logout_button = ("a[role='button'] span:nth-child(1)")
     companies_button = ("//span[normalize-space()='Organisation']")
-    jessica = ("(//*[name()='svg'][@role='img'])[18]")
+    jessica = ("(//*[name()='svg'][@role='img'])[21]")
     list_user = ("(//button[normalize-space()='Users'])[1]")
     page3 = ("(//a[normalize-space()='3'])[1]")
     transfer_credit = ("//tbody/tr[1]/td[7]/a[1]//*[name()='svg']")
@@ -911,7 +911,7 @@ class InternalBulkCheck(BaseCase):
     bulk_check_submit_button = ("//button[@type='submit']")
     bulk_check_success_notification = ("//div[@role='alert']")
     dashboard_button = ("(//button[normalize-space()='Dashboard'])[1]")
-    submitted_names = ("(//td[@role='cell'][normalize-space()='3'])[1]")
+    submitted_names = ("//th[normalize-space()='Submitted Names']")
     
 
     def open_homepage(self):
@@ -1191,7 +1191,7 @@ class ResendVerificationTenant(BaseCase):
     resend_verification = ("(//*[name()='svg'][@role='img'])[13]")
     confirm_resend = ("//button[normalize-space()='Confirm']")
     success_notification = ("(//div[@role='alert'])[1]")
-    test_company = ("(//*[name()='svg'][@role='img'])[19]")
+    test_company = ("(//*[name()='svg'][@role='img'])[21]")
 
     def open_homepage(self):
         self.maximize_window()

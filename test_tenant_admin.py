@@ -389,13 +389,13 @@ class DeleteTenantUser(BaseCase):
     edit_company = ("(//*[name()='svg'][@role='img'])[13]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
-    edit_user = ("(//*[name()='svg'][@role='img'])[20]")
+    edit_user = ("(//*[name()='svg'][@role='img'])[32]")
     delete_user = ("//button[normalize-space()='Delete']")
     delete_user_confirmation = ("//body/div[@role='dialog']/div/div[1]")
     delete_user_confirm_button = ("//button[normalize-space()='Confirm']")
     delete_user_notification = ("//div[@role='alert']")
     delete_user_notification_close_button = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
-    page_2 = ("(//a[normalize-space()='3'])[1]")
+    page_2 = ("(//a[normalize-space()='...'])[1]")
 
 
     def open_homepage(self):
@@ -441,7 +441,7 @@ class TransferWithdrawCredit2(BaseCase):
     deduct_popup = ("//body/div[@role='dialog']/div/div[1]")
     notification = ("//div[@role='alert']")
     notification_close = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
-    edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[23]")
+    edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[25]")
     
     def open_homepage(self):
         self.maximize_window()
@@ -833,7 +833,7 @@ class ResendVerificationTenant(BaseCase):
     notification = ("//div[@role='alert']")
     notification_close = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
     edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[23]")
-    resend_verification = ("(//*[name()='svg'][@role='img'])[25]")
+    resend_verification = ("(//*[name()='svg'][@role='img'])[28]")
     confirm_resend = ("//button[normalize-space()='Confirm']")
     success_notification = ("(//div[@role='alert'])[1]")
 

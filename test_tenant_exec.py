@@ -477,7 +477,7 @@ class InternalBulkCheck(BaseCase):
     bulk_check_submit_button = ("//button[@type='submit']")
     bulk_check_success_notification = ("//div[@role='alert']")
     dashboard_button = ("(//button[normalize-space()='Dashboard'])[1]")
-    submitted_names = ("(//td[@role='cell'][normalize-space()='3'])[1]")
+    submitted_names = ("//th[normalize-space()='Submitted Names']")
     
 
     def open_homepage(self):
