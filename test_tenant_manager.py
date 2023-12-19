@@ -287,6 +287,7 @@ class tenant_script(BaseCase):
         #self.slow_click(ResendVerificationTenant.edit_user1)
         self.sleep(5)
         self.click(ResendVerificationTenant.resend_verification)
+        self.sleep(5)
         self.click(ResendVerificationTenant.confirm_resend)
         self.assert_element(ResendVerificationTenant.success_notification)
         self.sleep(5)
@@ -356,7 +357,7 @@ class createUsercompany(BaseCase):
     
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
     
     def login(self):
@@ -389,7 +390,7 @@ class DeleteTenantUser(BaseCase):
     edit_company = ("(//*[name()='svg'][@role='img'])[13]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
-    edit_user = ("(//*[name()='svg'][@role='img'])[25]")
+    edit_user = ("(//*[name()='svg'][@role='img'])[27]")
     delete_user = ("//button[normalize-space()='Delete']")
     delete_user_confirmation = ("//body/div[@role='dialog']/div/div[1]")
     delete_user_confirm_button = ("//button[normalize-space()='Confirm']")
@@ -400,7 +401,7 @@ class DeleteTenantUser(BaseCase):
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
 
@@ -445,7 +446,7 @@ class TransferWithdrawCredit2(BaseCase):
     
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
     def open_email(self):
@@ -502,7 +503,7 @@ class SingleRiskCheck(BaseCase):
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
 
@@ -549,7 +550,7 @@ class createUser(BaseCase):
     dashboard_save = ("button[type='submit']")
     dashboard_role_superadmin = ('')
     account_created_notification = ("div[role='alert']")
-    dashboard_url = ('https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck/users')
+    dashboard_url = ('https://app-testing.halocheck.com.my//users')
     users_button = ("//a[@data-rb-event-key='/app/users']")
     verification_link = ('')
     account_verification_title = ('')
@@ -566,7 +567,7 @@ class createUser(BaseCase):
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
 
     def open_email(self):
         self.open_new_tab('https://mail.google.com/mail/u/0/#inbox')
@@ -627,7 +628,7 @@ class InternalBulkCheck(BaseCase):
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
 
@@ -689,7 +690,7 @@ class communityWatchlist_upload(BaseCase):
     
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
 
     def login(self):
         args = sys.argv[1:]
@@ -747,7 +748,7 @@ class communityWatchlist_management(BaseCase):
     
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
 
     def login(self):
         args = sys.argv[1:]
@@ -796,7 +797,7 @@ class communityWatchlist_bulk_upload(BaseCase):
     
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
 
     def login(self):
         args = sys.argv[1:]
@@ -833,13 +834,13 @@ class ResendVerificationTenant(BaseCase):
     notification = ("//div[@role='alert']")
     notification_close = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
     edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[23]")
-    resend_verification = ("(//*[name()='svg'][@role='img'])[27]")
+    resend_verification = ("(//*[name()='svg'][@role='img'])[30]")
     confirm_resend = ("//button[normalize-space()='Confirm']")
     success_notification = ("(//div[@role='alert'])[1]")
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
     def open_email(self):
@@ -890,7 +891,7 @@ class TransactionHistory(BaseCase):
 
     def open_homepage(self):
         self.maximize_window()
-        self.open("https://app-testing.halocheck.com.my/index.html/#/app/search/singlecheck")
+        self.open("https://app-testing.halocheck.com.my/")
         self.sleep(1)
 
     def open_email(self):
