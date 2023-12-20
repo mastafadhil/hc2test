@@ -180,6 +180,72 @@ class tenant_admin_script(BaseCase):
 
     def test_organisation_credit_pricing(self):
         self.sleep()   
+
+    def test_subscription_tenants_promo(self):
+        Subscription.open_homepage(self)
+        Subscription.login(self)
+        #self.sleep(60)
+
+        self.click(Subscription.subscription_button)
+        self.sleep(5)
+        self.assert_elements(Subscription.Subscribe_Topup, Subscription.BillingHistory, Subscription.PaymentSettings, Subscription.CancelPlan)
+        #self.click(Subscription.subscribe_now)
+        """
+        if (sys.argv[4]== "--var3=monthly"):
+            self.click(Subscription.monthly_tab)
+        elif(sys.argv[4]== "--var3=yearly"): 
+            self.click(Subscription.yearly_tab)
+        else :
+            print('Wrong Input')"""
+        css_selector = ("(//div[contains(@class,'d-flex justify-content-between section-header')])[3]")
+        self.sleep(5)
+        arg1 = self.var3
+        arg2 = self.data
+        
+        if arg1 == 'basic' and arg2 == 'monthly':
+            self.click(Subscription.basic_monthly)
+        elif arg1 == 'standard' and arg2 == 'monthly':
+            self.click(Subscription.standard_monthly)
+        elif arg1 == 'pro' and arg2 == 'monthly':
+            self.click(Subscription.pro_monthly)
+        elif arg1 == 'basic' and arg2 == 'yearly':
+            self.click(Subscription.yearly_tab)
+            self.click(Subscription.basic_yearly)
+        elif arg1 == 'standard' and arg2 == 'yearly':
+            self.click(Subscription.yearly_tab)
+            self.click(Subscription.standard_yearly)
+        elif arg1 == 'pro' and arg2 == 'yearly':
+            self.click(Subscription.yearly_tab)
+            self.click(Subscription.pro_yearly)
+        else:
+            print('Wrong Input')
+        
+        self.click(Subscription.continue_button)
+        """
+        if (sys.argv[6]== "--var3=basic"):
+            self.assert_element(Subscription.rm20)
+        elif (sys.argv[6]== "--var3=standard"):
+            self.assert_element(Subscription.rm50)
+        elif (sys.argv[6]== "--var3=pro"):
+            self.assert_element(Subscription.rm100)"""
+        self.sleep(10)
+        self.send_keys(Subscription.Promo_code, "ABC1234")
+        self.click(Subscription.pay_button)
+        self.sleep(10)
+        """self.send_keys(Subscription.card_info, "1234 1234 1234 1234")
+        self.send_keys(Subscription.card_expiry_date, "12/24")
+        self.send_keys(Subscription.cvc, "1234")
+
+        self.send_keys(Subscription.name_on_card, "Muhammad Fadhil Bin Ali Kutty")
+        self.click(Subscription.secure_save_info)"""
+        self.click(Subscription.subscribe)
+
+        """self.send_keys(Subscription.confirmation_code, "abcd1234")
+        self.click(Subscription.confirm_payment)"""
+        self.sleep(20)
+
+        self.assert_element(Subscription.Successful)
+
                 
 
 class Subscription(BaseCase):
@@ -217,6 +283,7 @@ class Subscription(BaseCase):
     confirmation_code = ("")
     confirm_payment = ("")
     Successful = ("(//span[@class='mt-3 mb-3 text-center'])[1]")
+    Promo_code = ("")
 
     def open_homepage(self):
         self.maximize_window()
