@@ -389,7 +389,7 @@ class DeleteTenantUser(BaseCase):
     edit_company = ("(//*[name()='svg'][@role='img'])[13]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
-    edit_user = ("(//*[name()='svg'][@role='img'])[34]")
+    edit_user = ("(//*[name()='svg'][@role='img'])[33]")
     delete_user = ("//button[normalize-space()='Delete']")
     delete_user_confirmation = ("//body/div[@role='dialog']/div/div[1]")
     delete_user_confirm_button = ("//button[normalize-space()='Confirm']")
