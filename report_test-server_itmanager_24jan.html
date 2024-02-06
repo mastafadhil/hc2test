@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head><link rel="shortcut icon" href="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABHCAYAAABVsFofAAAAAXNSR0IArs4c6QAACThJREFUeAHlnH9sE+cZx587O3FIUuIxnARKISQRtImTdgy1gbIQIAKmAv2DsaWiW9UJbaumSZ20SRPSpk3b+GPqH/zVaVKkaVLpAqhSoRSxKgRXJClh6caPJKvWNE1oSAxetSS1k3Ni+3bf13nds3P2nX//2CvZ53vv/fE8Hz/v8/64e0+w/OqPMmUotFRuYjU9JgePRqudFWZpjmZY8hsPJ4xmSzqdOekSdAoAkNVkpQq5gqbu2ljq/hGdTBGXrTYbWYNZ6Zh9E3FY6QaVFjgbyiqooawmBOS+i2hY+Xy37DJT+73Gv0eoHzx947Bv/Hr9dE3kRedQLU3frWXR4+c6FFBBWBzUiGecJj2zkdmSPk8pHA5FeLCeJgdKQ0B2W6eotfF+wsJW28cIHxZe6CYOi4NqbFxPDVVTrOml0ppSBmd/5ZPEoWya+Zheq3w/KSCxSIZgLYMavXiESobtrOntb7JSqiwpaTjwKXCwIz02CkHZkqiVxN83BEGdDlnTTE8HcUt67+HtWIx1ryUFB9biuVtPcLCdj3ZSa8JQdOXUTcCtydk0RtyS9u8lSgZQQnDgW3aUPsms5fD8ZYrmYHU1ikwQv+FElsB8U7U9aEn3z5ykY3sq6IP52wk5bHFF6ToRANPo3kn952z0WnEn/bJGu+fRKSbtl2FJ646fYnJCXsgdb4gLDgdj6rtP/278DbVaE/Ut8YqZWHoA2tN5gkbvjbE/NF5AhuGowZzf8mZi0urkSkGr0qxhx8nTCQEyBCcTYIJapQsPUSKAdOFkDozmn57SyHgBxYRTSGA45XgAxYSD7nrIUUrp8jFc4C+PgS9/pvEXAEEv6BcrRIWDAd7INRsb3MUqIKXXMsOGifzEq6eYftAzWtCEgykBRr4Y4OV6dx1NMb14dPPSI0NsPgj3oRU04WCuNK5MCXJ1gKelSCJxev5nBRzenH538Hqv32yWEqk0n/JsPnKRJodL2fpTpNxhcGBeWHbYWP6Ajh2d37X00rO9vrXW3shMhXQeq3mFwcHqHSj+5MgnTH/LI9524cUmu/dbz1whS9Fo2qGkbwwYU/Ro1hOCo7aaVvsXocJEWrIWbxAO+l952rywfcuFQFHRf0IXC+RHNOtRwbGS+2EpNdc+0FRZJH9Nya41z/t/0DIqbd3UrZkojyO1rCcEJ9RDdUzHVNFctNRi+ea69vmXW6/411TciJk47otZaleKnLCeGeUmAO6S8MDgYFwzNWSjF/fd4fG6x1UViwfll5rqpcPb3pVLiid1MxhJkD02TDrrvi7GATwQGBzcVwK13XY3izT6ZZJ9ay11xc8Ffrhdkr6+5ZLij4J33owWkGPp1ilLrOAAHggMDkwJkWpHHI/cohCot3xjzSH/iZaPFusec8STN5fSRjYtEb3U3MMyat6s7YjjEd5sWWoRD9e0SMd3XvKtqbgVT95cSVtSO8R4gIsCJ3YvFa/QJloqsdgCh4TvNVX79j7uCJhM48bLyLLTUQQt2TzEem1wCfVWxhUwllIkX7Wp2drm//Eut9RcdylQXKw/Fck+G1L7HdFoF24MycpUZtFrt+y1HfK/vH3QV/VVnalI9umo/Y55pTrpiTGvCuzyv9AgSU7fFdPloQ1Fc1/Y01NT6kpNW7PSEpH5o2r5oPj95nJf61aHv8js1EqXK3EZhcOVxlTEtO0rbfKPnnVKTZu7Q0sj2W9VXER2zFizCqt1+cRk8j5l2ldF3qc3OgKXhspJ8KzVSpetuKxYTqSyytJIm/f4NvdHT/hzQh4uX1YtB0IEyOx8X5y4fVbuP0ACFys3jlmFc1P4fPAcDZS7Zc+B3MARLkVW4LgFc+/rcp9/jO7tDhcnt84yCscvmMffkj/5sIduHs21JqT1t2QEToCKZvqEzwbfosEaSVg4qiVILsaJnwkTVNNA9NuudWmRb1hYuPUL4YLzDF1vl2ihPi2VpLDQf/61nfEAl7RZzoJQfON1oVf6WJ5oS6HsGS1KxHO76+0ueuNqc0oqDpBp/KLofPendKYln8EARsosx09F7pvi1OBZeaBakheeSwnpLBQyc7WDGr7tovOK0bARabJ+Z0YQrv5e6Bn4i+xoU/zK41nQKSVV4sl47LHA3goEZjmTnhlqrJynO2NVSlTsWzMs1/KXV1h1609Cr3tEHtunjs/X358qT8LXN87TsLKXAmEZziztqPRQvwNw9IPiVyavifeGLwT+sXWRpKf0c+RHCmnMTqu3u2jSFbSc0ETPSNNS/Io0IHx+4+fiO+7zylxoUZBq8kNtfSnVXThPHYKj12u5ZVP3HwRH35+pp8Uje/LWr3DFI4/Sp3YqV1wLXAwPITiI0LKeRdEy9KYwfvZnYlf7BE0VhG/hyvMjHHGJsmorK9uS1Pu2wrrySMfsEKf+9rb8YZ1E0nd4QYV4jHTEXMcwywG12aoRmltVRc90/Ze65L4DCph6nrgQj/A11SV2prfaaqBrGBxEcN+DwdD/Q4CemCFo7fBbAQdAsAXH3jZPH5x6taD5QD+mp6KvVtCEw5sXzA1mV4ghmhNW66oJBwlgZmVNymOAdzrYFkF1pnz/zTbQKhvVHt07GnMnX1Q4AIAtgChgWikIBRZCMAoGusaEgwQA1LDHRf86fRKneR/QbW9Q5k/YQawXdOGggEJx0HDA9Rtrabi8P2ywFw2SIThw0CgQBaOCfGtikPfaic64wACYIThIqAaUTz6I+5idygKWUYuBvggm8+5Dv2a/DHzNLXnJW+6iuq0Bmrr4PDld8+xhHwNZs5IEwxB39yusU3nHdZMgfzzBsOXwQmFBvBezTnfk7EARzR/y6XXXXC+to5DM+3PwvG7Fgwa28xbP0n1NebdEtgOsBVMCjHwxT9SaFhiVMSk4qARPXWJTO7YGYI8WdsDh0bFMB0DBmgxG9ZgrJfoWArXcScNBYQCEpy/ZCz+UrY/YAZcpS+KWghuTWKxK1lpSDkddIDazYc8WtyQ815tqUNxKsOYLKLAULNRhPQo+MVUhJZYTKYzakvAAOAeFdNhfgIBHWo00P9YVL791iS+jcCtZrdwUAJRk/AoTJspXWuCo61KDQjw2oCBgOwE+egH3kfj7umAhCOmwEi050g4nslK+I4W/5CzyeuQ5f3kZ4tNlIZF18vP/AXYR+dvV3FCCAAAAAElFTkSuQmCC">
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    sort_column(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+
+        if (key_a == key_b) return 0;
+
+        if (reversed) {
+            return (key_a < key_b ? 1 : -1);
+        } else {
+            return (key_a > key_b ? 1 : -1);
+        }
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    
+<script src="https://code.highcharts.com/9.0.1/highcharts.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/accessibility.js"></script>
+
+<style>
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 1em auto;
+}
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+</style>
+
+<figure class="highcharts-figure">
+    <div id="chartcontainer_1_1"></div>
+    <p class="highcharts-description"></p>
+</figure>
+
+<script>
+// Build the chart
+Highcharts.chart('chartcontainer_1_1', {
+credits: {
+    enabled: false
+},
+title: {
+    text: 'SeleniumBase Dashboard ⚪'
+},
+subtitle: {
+    text: ''
+},
+xAxis: {
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px',
+        },
+    },
+categories: ['Passed','Untested','Skipped','Failed',], crosshair: false},
+yAxis: {
+
+    title: {
+        text: 'Values',
+        style: {
+            fontSize: '14px'
+        }
+    },
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px'
+        }
+    }
+},
+chart: {
+    renderTo: 'statusChart',
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+},
+
+tooltip: {
+    enabled: true,
+    useHTML: true,
+    style: {
+        padding: '6px',
+        fontSize: '14px'
+    },
+    backgroundColor: {
+        linearGradient: {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1
+        },
+        stops: [
+            [0, 'rgba(255, 255, 255, 0.78)'],
+            [0.5, 'rgba(235, 235, 235, 0.76)'],
+            [1, 'rgba(244, 252, 255, 0.74)']
+        ]
+    },
+    hideDelay: 40,
+    pointFormat: '<b>{point.y}</b><br /><b>{point.percentage:.1f}%</b>'
+},
+
+accessibility: {
+    point: {
+        valueSuffix: '%'
+    }
+},
+plotOptions: {
+    series: {
+        states: {
+            inactive: {
+                opacity: 0.85
+            }
+        }
+    },
+    pie: {
+        size: "95%",
+        allowPointSelect: true,
+        animation: false,
+        cursor: 'pointer',
+        dataLabels: {
+            enabled: true,
+            formatter: function() {
+              if (this.y > 0) {
+                return this.point.name + ': ' + this.point.y
+              }
+            }
+        },
+        states: {
+            hover: {
+                enabled: true
+            }
+        },
+        showInLegend: true
+    }
+},
+
+series: [{
+name: 'Series 1',
+colorByPoint: true,
+data: [
+
+{
+name: 'Passed',
+y: 22,
+color: '#84d474'
+},
+
+{
+name: 'Untested',
+y: 0,
+color: '#eaeaea'
+},
+
+{
+name: 'Skipped',
+y: 0,
+color: '#efd8b4'
+},
+
+{
+name: 'Failed',
+y: 0,
+color: '#f17476'
+},
+
+            ]
+                }]
+            });
+            </script>
+            
+    <p>Report generated on 24-Jan-2024 at 11:58:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;pytest&apos;: &apos;7.2.0&apos;, &apos;pluggy&apos;: &apos;1.0.0&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.22621-SP0</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;Faker&apos;: &apos;15.3.4&apos;, &apos;forked&apos;: &apos;1.4.0&apos;, &apos;html&apos;: &apos;2.0.1&apos;, &apos;metadata&apos;: &apos;2.0.4&apos;, &apos;ordering&apos;: &apos;0.6&apos;, &apos;rerunfailures&apos;: &apos;10.3&apos;, &apos;xdist&apos;: &apos;3.0.2&apos;, &apos;seleniumbase&apos;: &apos;4.9.1&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.8.3</td></tr></table>
+    <h2>Summary</h2>
+    <p>22 tests ran in 900.72 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">22 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_data_category</td>
+          <td class="col-duration">19.56</td>
+          <td class="col-links"><a class="url" href="https://app-testing.halocheck.com.my/index.html#/app/search/singlecheck" target="_blank">URL</a> <a class="image" href="assets/test_admin.py__admin_script__test_delete_data_category_1_1.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/test_admin.py__admin_script__test_delete_data_category_1_1.png"><img src="assets/test_admin.py__admin_script__test_delete_data_category_1_1.png"/></a></div>
+            <div class="log">self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &quot;//span[normalize-space()=&#x27;Settings&#x27;]&quot;, by = &#x27;xpath&#x27;, timeout = 7, delay = 0<br/>scroll = True<br/><br/>    def click(<br/>        self, selector, by=&quot;css selector&quot;, timeout=None, delay=0, scroll=True<br/>    ):<br/>        self.__check_scope()<br/>        if not timeout:<br/>            timeout = settings.SMALL_TIMEOUT<br/>        if self.timeout_multiplier and timeout == settings.SMALL_TIMEOUT:<br/>            timeout = self.__get_new_timeout(timeout)<br/>        original_selector = selector<br/>        original_by = by<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        if delay and (type(delay) in [int, float]) and delay &gt; 0:<br/>            time.sleep(delay)<br/>        if page_utils.is_link_text_selector(selector) or by == By.LINK_TEXT:<br/>            if not self.is_link_text_visible(selector):<br/>                # Handle a special case of links hidden in dropdowns<br/>                self.click_link_text(selector, timeout=timeout)<br/>                return<br/>        if (<br/>            page_utils.is_partial_link_text_selector(selector)<br/>            or by == By.PARTIAL_LINK_TEXT<br/>        ):<br/>            if not self.is_partial_link_text_visible(selector):<br/>                # Handle a special case of partial links hidden in dropdowns<br/>                self.click_partial_link_text(selector, timeout=timeout)<br/>                return<br/>        if self.__is_shadow_selector(selector):<br/>            self.__shadow_click(selector, timeout)<br/>            return<br/>        if self.browser == &quot;safari&quot;:<br/>            self.wait_for_ready_state_complete()<br/>        if self.__needs_minimum_wait():<br/>            time.sleep(0.022)<br/>        element = page_actions.wait_for_element_visible(<br/>            self.driver,<br/>            selector,<br/>            by,<br/>            timeout=timeout,<br/>            original_selector=original_selector,<br/>        )<br/>        self.__demo_mode_highlight_if_active(original_selector, original_by)<br/>        if scroll and not self.demo_mode and not self.slow_mode:<br/>            self.__scroll_to_element(element, selector, by)<br/>        pre_action_url = self.driver.current_url<br/>        pre_window_count = len(self.driver.window_handles)<br/>        try:<br/>            if (<br/>                by == By.LINK_TEXT<br/>                and (<br/>                    self.browser == &quot;ie&quot; or self.browser == &quot;safari&quot;<br/>                )<br/>            ):<br/>                self.__jquery_click(selector, by=by)<br/>            else:<br/>                href = None<br/>                new_tab = False<br/>                onclick = None<br/>                try:<br/>                    if self.headless and element.tag_name.lower() == &quot;a&quot;:<br/>                        # Handle a special case of opening a new tab (headless)<br/>                        href = element.get_attribute(&quot;href&quot;).strip()<br/>                        onclick = element.get_attribute(&quot;onclick&quot;)<br/>                        target = element.get_attribute(&quot;target&quot;)<br/>                        if target == &quot;_blank&quot;:<br/>                            new_tab = True<br/>                        if new_tab and self.__looks_like_a_page_url(href):<br/>                            if onclick:<br/>                                try:<br/>                                    self.execute_script(onclick)<br/>                                except Exception:<br/>                                    pass<br/>                            current_window = self.driver.current_window_handle<br/>                            self.open_new_window()<br/>                            try:<br/>                                self.open(href)<br/>                            except Exception:<br/>                                pass<br/>                            self.switch_to_window(current_window)<br/>                            return<br/>                except Exception:<br/>                    pass<br/>                # Normal click<br/>&gt;               element.click()<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:349: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;, element=&quot;BCED3AF19CCDAEBFF992A45FACEB6D35_element_23&quot;)&gt;<br/><br/>    def click(self) -&gt; None:<br/>        &quot;&quot;&quot;Clicks the element.&quot;&quot;&quot;<br/>&gt;       self._execute(Command.CLICK_ELEMENT)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webelement.py:93: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;, element=&quot;BCED3AF19CCDAEBFF992A45FACEB6D35_element_23&quot;)&gt;<br/>command = &#x27;clickElement&#x27;, params = {&#x27;id&#x27;: &#x27;BCED3AF19CCDAEBFF992A45FACEB6D35_element_23&#x27;}<br/><br/>    def _execute(self, command, params=None):<br/>        &quot;&quot;&quot;Executes a command against the underlying HTML element.<br/>    <br/>        Args:<br/>          command: The name of the command to _execute as a string.<br/>          params: A dictionary of named parameters to send with the command.<br/>    <br/>        Returns:<br/>          The command&#x27;s JSON response loaded into a dictionary object.<br/>        &quot;&quot;&quot;<br/>        if not params:<br/>            params = {}<br/>        params[&quot;id&quot;] = self._id<br/>&gt;       return self._parent.execute(command, params)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webelement.py:410: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;, driver_command = &#x27;clickElement&#x27;<br/>params = {&#x27;id&#x27;: &#x27;BCED3AF19CCDAEBFF992A45FACEB6D35_element_23&#x27;}<br/><br/>    def execute(self, driver_command: str, params: dict = None) -&gt; dict:<br/>        &quot;&quot;&quot;<br/>        Sends a command to be executed by a command.CommandExecutor.<br/>    <br/>        :Args:<br/>         - driver_command: The name of the command to execute as a string.<br/>         - params: A dictionary of named parameters to send with the command.<br/>    <br/>        :Returns:<br/>          The command&#x27;s JSON response loaded into a dictionary object.<br/>        &quot;&quot;&quot;<br/>        params = self._wrap_value(params)<br/>    <br/>        if self.session_id:<br/>            if not params:<br/>                params = {&quot;sessionId&quot;: self.session_id}<br/>            elif &quot;sessionId&quot; not in params:<br/>                params[&quot;sessionId&quot;] = self.session_id<br/>    <br/>        response = self.command_executor.execute(driver_command, params)<br/>        if response:<br/>&gt;           self.error_handler.check_response(response)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:444: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001CEDD9A67C0&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;element click intercepted&quot;,&quot;message&quot;:&quot;element click intercepted: Element ...07FF7DF7ED3A3]\\n\\tBaseThreadInitThunk [0x00007FFA3FBD257D+29]\\n\\tRtlUserThreadStart [0x00007FFA4016AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&quot;className&quot;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class=&quot;sidebar-menu-nav-title&quot;&gt;...&lt;/span&gt; is not clickable at point (86, 505). Other element would receive the click: &lt;div class=&quot;global-loading-container d-flex align-items-center justify-content-center&quot;&gt;...&lt;/div&gt;</span><br/><span class="error">E         (Session info: chrome=120.0.6099.225)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF8882B2+55298]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7F5E02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B05AB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F7A77]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F5E39]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F3C08]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F2C8A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E87BF]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7120AA]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E80CF]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7122C0]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72AAA4]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF711E83]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E670A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E7964]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC00AAB+3694587]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC5728E+4048862]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC4F173+4015811]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF9247D6+695590]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF800CE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FCF34]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FD062]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7ED3A3]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFA3FBD257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFA4016AA58+40]</span><br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:249: ElementClickInterceptedException<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &quot;//span[normalize-space()=&#x27;Settings&#x27;]&quot;, by = &#x27;xpath&#x27;<br/><br/>    def __js_click(self, selector, by=&quot;css selector&quot;):<br/>        &quot;&quot;&quot;Clicks an element using pure JS. Does not use jQuery.&quot;&quot;&quot;<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        css_selector = self.convert_to_css_selector(selector, by=by)<br/>        css_selector = re.escape(css_selector)  # Add &quot;\\&quot; to special chars<br/>        css_selector = self.__escape_quotes_if_needed(css_selector)<br/>        is_visible = self.is_element_visible(selector, by=by)<br/>        current_url = self.get_current_url()<br/>        script = (<br/>            &quot;&quot;&quot;var simulateClick = function (elem) {<br/>                   var evt = new MouseEvent(&#x27;click&#x27;, {<br/>                       bubbles: true,<br/>                       cancelable: true,<br/>                       view: window<br/>                   });<br/>                   var canceled = !elem.dispatchEvent(evt);<br/>               };<br/>               var someLink = document.querySelector(&#x27;%s&#x27;);<br/>               simulateClick(someLink);&quot;&quot;&quot;<br/>            % css_selector<br/>        )<br/>        try:<br/>&gt;           self.execute_script(script)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:11695: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;<br/>script = &#x27;var simulateClick = function (elem) {\n                   var evt = new MouseEvent(\&#x27;click\&#x27;, {\n                    ...document.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;);\n               simulateClick(someLink);&#x27;<br/>args = (), kwargs = {}<br/><br/>    def execute_script(self, script, *args, **kwargs):<br/>        self.__check_scope()<br/>        self.__check_browser()<br/>        if not python3:<br/>            script = unicode(script.decode(&quot;latin-1&quot;))  # noqa: F821<br/>&gt;       return self.driver.execute_script(script, *args, **kwargs)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:2866: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;<br/>script = &#x27;var simulateClick = function (elem) {\n                   var evt = new MouseEvent(\&#x27;click\&#x27;, {\n                    ...document.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;);\n               simulateClick(someLink);&#x27;<br/>args = (), converted_args = [], command = &#x27;w3cExecuteScript&#x27;<br/><br/>    def execute_script(self, script, *args):<br/>        &quot;&quot;&quot;<br/>        Synchronously Executes JavaScript in the current window/frame.<br/>    <br/>        :Args:<br/>         - script: The JavaScript to execute.<br/>         - \\*args: Any applicable arguments for your JavaScript.<br/>    <br/>        :Usage:<br/>            ::<br/>    <br/>                driver.execute_script(&#x27;return document.title;&#x27;)<br/>        &quot;&quot;&quot;<br/>        if isinstance(script, ScriptKey):<br/>            try:<br/>                script = self.pinned_scripts[script.id]<br/>            except KeyError:<br/>                raise JavascriptException(&quot;Pinned script could not be found&quot;)<br/>    <br/>        converted_args = list(args)<br/>        command = Command.W3C_EXECUTE_SCRIPT<br/>    <br/>&gt;       return self.execute(command, {&quot;script&quot;: script, &quot;args&quot;: converted_args})[&quot;value&quot;]<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:506: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;, driver_command = &#x27;w3cExecuteScript&#x27;<br/>params = {&#x27;args&#x27;: [], &#x27;script&#x27;: &#x27;var simulateClick = function (elem) {\n                   var evt = new MouseEvent(\&#x27;click\&#x27;, ...ocument.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;);\n               simulateClick(someLink);&#x27;}<br/><br/>    def execute(self, driver_command: str, params: dict = None) -&gt; dict:<br/>        &quot;&quot;&quot;<br/>        Sends a command to be executed by a command.CommandExecutor.<br/>    <br/>        :Args:<br/>         - driver_command: The name of the command to execute as a string.<br/>         - params: A dictionary of named parameters to send with the command.<br/>    <br/>        :Returns:<br/>          The command&#x27;s JSON response loaded into a dictionary object.<br/>        &quot;&quot;&quot;<br/>        params = self._wrap_value(params)<br/>    <br/>        if self.session_id:<br/>            if not params:<br/>                params = {&quot;sessionId&quot;: self.session_id}<br/>            elif &quot;sessionId&quot; not in params:<br/>                params[&quot;sessionId&quot;] = self.session_id<br/>    <br/>        response = self.command_executor.execute(driver_command, params)<br/>        if response:<br/>&gt;           self.error_handler.check_response(response)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:444: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001CEDD9A67C0&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;invalid element state&quot;,&quot;message&quot;:&quot;invalid element state: Failed to execut...07FF7DF7ED3A3]\\n\\tBaseThreadInitThunk [0x00007FFA3FBD257D+29]\\n\\tRtlUserThreadStart [0x00007FFA4016AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&quot;className&quot;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Failed to execute &#x27;querySelector&#x27; on &#x27;Document&#x27;: &#x27;span[normalize-space()=&quot;Settings&quot;]&#x27; is not a valid selector.</span><br/><span class="error">E         (Session info: chrome=120.0.6099.225)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF8882B2+55298]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7F5E02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B05AB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B509C]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B732A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72B12B]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7120AA]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72AAA4]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF711E83]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E670A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E7964]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC00AAB+3694587]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC5728E+4048862]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC4F173+4015811]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF9247D6+695590]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF800CE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FCF34]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FD062]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7ED3A3]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFA3FBD257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFA4016AA58+40]</span><br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:249: InvalidElementStateException<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &quot;//span[normalize-space()=&#x27;Settings&#x27;]&quot;, by = &#x27;xpath&#x27;, timeout = 7, delay = 0<br/>scroll = True<br/><br/>    def click(<br/>        self, selector, by=&quot;css selector&quot;, timeout=None, delay=0, scroll=True<br/>    ):<br/>        self.__check_scope()<br/>        if not timeout:<br/>            timeout = settings.SMALL_TIMEOUT<br/>        if self.timeout_multiplier and timeout == settings.SMALL_TIMEOUT:<br/>            timeout = self.__get_new_timeout(timeout)<br/>        original_selector = selector<br/>        original_by = by<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        if delay and (type(delay) in [int, float]) and delay &gt; 0:<br/>            time.sleep(delay)<br/>        if page_utils.is_link_text_selector(selector) or by == By.LINK_TEXT:<br/>            if not self.is_link_text_visible(selector):<br/>                # Handle a special case of links hidden in dropdowns<br/>                self.click_link_text(selector, timeout=timeout)<br/>                return<br/>        if (<br/>            page_utils.is_partial_link_text_selector(selector)<br/>            or by == By.PARTIAL_LINK_TEXT<br/>        ):<br/>            if not self.is_partial_link_text_visible(selector):<br/>                # Handle a special case of partial links hidden in dropdowns<br/>                self.click_partial_link_text(selector, timeout=timeout)<br/>                return<br/>        if self.__is_shadow_selector(selector):<br/>            self.__shadow_click(selector, timeout)<br/>            return<br/>        if self.browser == &quot;safari&quot;:<br/>            self.wait_for_ready_state_complete()<br/>        if self.__needs_minimum_wait():<br/>            time.sleep(0.022)<br/>        element = page_actions.wait_for_element_visible(<br/>            self.driver,<br/>            selector,<br/>            by,<br/>            timeout=timeout,<br/>            original_selector=original_selector,<br/>        )<br/>        self.__demo_mode_highlight_if_active(original_selector, original_by)<br/>        if scroll and not self.demo_mode and not self.slow_mode:<br/>            self.__scroll_to_element(element, selector, by)<br/>        pre_action_url = self.driver.current_url<br/>        pre_window_count = len(self.driver.window_handles)<br/>        try:<br/>            if (<br/>                by == By.LINK_TEXT<br/>                and (<br/>                    self.browser == &quot;ie&quot; or self.browser == &quot;safari&quot;<br/>                )<br/>            ):<br/>                self.__jquery_click(selector, by=by)<br/>            else:<br/>                href = None<br/>                new_tab = False<br/>                onclick = None<br/>                try:<br/>                    if self.headless and element.tag_name.lower() == &quot;a&quot;:<br/>                        # Handle a special case of opening a new tab (headless)<br/>                        href = element.get_attribute(&quot;href&quot;).strip()<br/>                        onclick = element.get_attribute(&quot;onclick&quot;)<br/>                        target = element.get_attribute(&quot;target&quot;)<br/>                        if target == &quot;_blank&quot;:<br/>                            new_tab = True<br/>                        if new_tab and self.__looks_like_a_page_url(href):<br/>                            if onclick:<br/>                                try:<br/>                                    self.execute_script(onclick)<br/>                                except Exception:<br/>                                    pass<br/>                            current_window = self.driver.current_window_handle<br/>                            self.open_new_window()<br/>                            try:<br/>                                self.open(href)<br/>                            except Exception:<br/>                                pass<br/>                            self.switch_to_window(current_window)<br/>                            return<br/>                except Exception:<br/>                    pass<br/>                # Normal click<br/>                element.click()<br/>        except StaleElementReferenceException:<br/>            self.wait_for_ready_state_complete()<br/>            time.sleep(0.16)<br/>            element = page_actions.wait_for_element_visible(<br/>                self.driver,<br/>                selector,<br/>                by,<br/>                timeout=timeout,<br/>                original_selector=original_selector,<br/>            )<br/>            try:<br/>                self.__scroll_to_element(element, selector, by)<br/>            except Exception:<br/>                pass<br/>            if self.browser == &quot;safari&quot; and by == By.LINK_TEXT:<br/>                self.__jquery_click(selector, by=by)<br/>            else:<br/>                element.click()<br/>        except ENI_Exception:<br/>            self.wait_for_ready_state_complete()<br/>            time.sleep(0.1)<br/>            element = page_actions.wait_for_element_visible(<br/>                self.driver,<br/>                selector,<br/>                by,<br/>                timeout=timeout,<br/>                original_selector=original_selector,<br/>            )<br/>            href = None<br/>            new_tab = False<br/>            onclick = None<br/>            try:<br/>                if element.tag_name.lower() == &quot;a&quot;:<br/>                    # Handle a special case of opening a new tab (non-headless)<br/>                    href = element.get_attribute(&quot;href&quot;).strip()<br/>                    onclick = element.get_attribute(&quot;onclick&quot;)<br/>                    target = element.get_attribute(&quot;target&quot;)<br/>                    if target == &quot;_blank&quot;:<br/>                        new_tab = True<br/>                    if new_tab and self.__looks_like_a_page_url(href):<br/>                        if onclick:<br/>                            try:<br/>                                self.execute_script(onclick)<br/>                            except Exception:<br/>                                pass<br/>                        current_window = self.driver.current_window_handle<br/>                        self.open_new_window()<br/>                        try:<br/>                            self.open(href)<br/>                        except Exception:<br/>                            pass<br/>                        self.switch_to_window(current_window)<br/>                        return<br/>            except Exception:<br/>                pass<br/>            self.__scroll_to_element(element, selector, by)<br/>            if self.browser == &quot;firefox&quot; or self.browser == &quot;safari&quot;:<br/>                if by == By.LINK_TEXT or &quot;contains(&quot; in selector:<br/>                    self.__jquery_click(selector, by=by)<br/>                else:<br/>                    self.__js_click(selector, by=by)<br/>            else:<br/>                element.click()<br/>        except MoveTargetOutOfBoundsException:<br/>            self.wait_for_ready_state_complete()<br/>            try:<br/>                self.__js_click(selector, by=by)<br/>            except Exception:<br/>                try:<br/>                    self.__jquery_click(selector, by=by)<br/>                except Exception:<br/>                    # One more attempt to click on the element<br/>                    element = page_actions.wait_for_element_visible(<br/>                        self.driver,<br/>                        selector,<br/>                        by,<br/>                        timeout=timeout,<br/>                        original_selector=original_selector,<br/>                    )<br/>                    element.click()<br/>        except WebDriverException as e:<br/>            if (<br/>                &quot;cannot determine loading status&quot; in e.msg<br/>                or &quot;unexpected command response&quot; in e.msg<br/>            ):<br/>                pass  # Odd issue where the click did happen. Continue.<br/>            else:<br/>                self.wait_for_ready_state_complete()<br/>                try:<br/>&gt;                   self.__js_click(selector, by=by)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:439: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &quot;//span[normalize-space()=&#x27;Settings&#x27;]&quot;, by = &#x27;xpath&#x27;<br/><br/>    def __js_click(self, selector, by=&quot;css selector&quot;):<br/>        &quot;&quot;&quot;Clicks an element using pure JS. Does not use jQuery.&quot;&quot;&quot;<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        css_selector = self.convert_to_css_selector(selector, by=by)<br/>        css_selector = re.escape(css_selector)  # Add &quot;\\&quot; to special chars<br/>        css_selector = self.__escape_quotes_if_needed(css_selector)<br/>        is_visible = self.is_element_visible(selector, by=by)<br/>        current_url = self.get_current_url()<br/>        script = (<br/>            &quot;&quot;&quot;var simulateClick = function (elem) {<br/>                   var evt = new MouseEvent(&#x27;click&#x27;, {<br/>                       bubbles: true,<br/>                       cancelable: true,<br/>                       view: window<br/>                   });<br/>                   var canceled = !elem.dispatchEvent(evt);<br/>               };<br/>               var someLink = document.querySelector(&#x27;%s&#x27;);<br/>               simulateClick(someLink);&quot;&quot;&quot;<br/>            % css_selector<br/>        )<br/>        try:<br/>            self.execute_script(script)<br/>        except Exception as e:<br/>            # If element was visible but no longer, or on a different page now,<br/>            # assume that the click actually worked and continue with the test.<br/>            if (<br/>                (is_visible and not self.is_element_visible(selector, by=by))<br/>                or current_url != self.get_current_url()<br/>            ):<br/>                return  # The click worked, but threw an Exception. Keep going.<br/>            # It appears the first click didn&#x27;t work. Make another attempt.<br/>            self.wait_for_ready_state_complete()<br/>            if &quot;Cannot read properties of null&quot; in e.msg:<br/>                page_actions.wait_for_element_present(<br/>                    self.driver, selector, by, timeout=5<br/>                )<br/>                if not page_actions.is_element_clickable(<br/>                    self.driver, selector, by<br/>                ):<br/>                    try:<br/>                        self.wait_for_element_clickable(<br/>                            selector, by, timeout=1.2<br/>                        )<br/>                    except Exception:<br/>                        pass<br/>            # If the regular mouse-simulated click fails, do a basic JS click<br/>            script = (<br/>                &quot;&quot;&quot;document.querySelector(&#x27;%s&#x27;).click();&quot;&quot;&quot;<br/>                % css_selector<br/>            )<br/>&gt;           self.execute_script(script)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:11724: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;<br/>script = &#x27;document.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;).click();&#x27;, args = (), kwargs = {}<br/><br/>    def execute_script(self, script, *args, **kwargs):<br/>        self.__check_scope()<br/>        self.__check_browser()<br/>        if not python3:<br/>            script = unicode(script.decode(&quot;latin-1&quot;))  # noqa: F821<br/>&gt;       return self.driver.execute_script(script, *args, **kwargs)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:2866: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;<br/>script = &#x27;document.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;).click();&#x27;, args = (), converted_args = [], command = &#x27;w3cExecuteScript&#x27;<br/><br/>    def execute_script(self, script, *args):<br/>        &quot;&quot;&quot;<br/>        Synchronously Executes JavaScript in the current window/frame.<br/>    <br/>        :Args:<br/>         - script: The JavaScript to execute.<br/>         - \\*args: Any applicable arguments for your JavaScript.<br/>    <br/>        :Usage:<br/>            ::<br/>    <br/>                driver.execute_script(&#x27;return document.title;&#x27;)<br/>        &quot;&quot;&quot;<br/>        if isinstance(script, ScriptKey):<br/>            try:<br/>                script = self.pinned_scripts[script.id]<br/>            except KeyError:<br/>                raise JavascriptException(&quot;Pinned script could not be found&quot;)<br/>    <br/>        converted_args = list(args)<br/>        command = Command.W3C_EXECUTE_SCRIPT<br/>    <br/>&gt;       return self.execute(command, {&quot;script&quot;: script, &quot;args&quot;: converted_args})[&quot;value&quot;]<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:506: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;, driver_command = &#x27;w3cExecuteScript&#x27;<br/>params = {&#x27;args&#x27;: [], &#x27;script&#x27;: &#x27;document.querySelector(\&#x27;span\\[normalize\\-space\\(\\)=\\&quot;Settings\\&quot;\\]\&#x27;).click();&#x27;}<br/><br/>    def execute(self, driver_command: str, params: dict = None) -&gt; dict:<br/>        &quot;&quot;&quot;<br/>        Sends a command to be executed by a command.CommandExecutor.<br/>    <br/>        :Args:<br/>         - driver_command: The name of the command to execute as a string.<br/>         - params: A dictionary of named parameters to send with the command.<br/>    <br/>        :Returns:<br/>          The command&#x27;s JSON response loaded into a dictionary object.<br/>        &quot;&quot;&quot;<br/>        params = self._wrap_value(params)<br/>    <br/>        if self.session_id:<br/>            if not params:<br/>                params = {&quot;sessionId&quot;: self.session_id}<br/>            elif &quot;sessionId&quot; not in params:<br/>                params[&quot;sessionId&quot;] = self.session_id<br/>    <br/>        response = self.command_executor.execute(driver_command, params)<br/>        if response:<br/>&gt;           self.error_handler.check_response(response)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:444: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001CEDD9A67C0&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;invalid element state&quot;,&quot;message&quot;:&quot;invalid element state: Failed to execut...07FF7DF7ED3A3]\\n\\tBaseThreadInitThunk [0x00007FFA3FBD257D+29]\\n\\tRtlUserThreadStart [0x00007FFA4016AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&quot;className&quot;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.InvalidElementStateException: Message: invalid element state: Failed to execute &#x27;querySelector&#x27; on &#x27;Document&#x27;: &#x27;span[normalize-space()=&quot;Settings&quot;]&#x27; is not a valid selector.</span><br/><span class="error">E         (Session info: chrome=120.0.6099.225)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF8882B2+55298]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7F5E02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B05AB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B509C]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B732A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72B12B]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7120AA]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72AAA4]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF711E83]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E670A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E7964]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC00AAB+3694587]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC5728E+4048862]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC4F173+4015811]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF9247D6+695590]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF800CE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FCF34]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FD062]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7ED3A3]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFA3FBD257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFA4016AA58+40]</span><br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:249: InvalidElementStateException<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &quot;//span[normalize-space()=&#x27;Settings&#x27;]&quot;, by = &#x27;xpath&#x27;, timeout = 7, delay = 0<br/>scroll = True<br/><br/>    def click(<br/>        self, selector, by=&quot;css selector&quot;, timeout=None, delay=0, scroll=True<br/>    ):<br/>        self.__check_scope()<br/>        if not timeout:<br/>            timeout = settings.SMALL_TIMEOUT<br/>        if self.timeout_multiplier and timeout == settings.SMALL_TIMEOUT:<br/>            timeout = self.__get_new_timeout(timeout)<br/>        original_selector = selector<br/>        original_by = by<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        if delay and (type(delay) in [int, float]) and delay &gt; 0:<br/>            time.sleep(delay)<br/>        if page_utils.is_link_text_selector(selector) or by == By.LINK_TEXT:<br/>            if not self.is_link_text_visible(selector):<br/>                # Handle a special case of links hidden in dropdowns<br/>                self.click_link_text(selector, timeout=timeout)<br/>                return<br/>        if (<br/>            page_utils.is_partial_link_text_selector(selector)<br/>            or by == By.PARTIAL_LINK_TEXT<br/>        ):<br/>            if not self.is_partial_link_text_visible(selector):<br/>                # Handle a special case of partial links hidden in dropdowns<br/>                self.click_partial_link_text(selector, timeout=timeout)<br/>                return<br/>        if self.__is_shadow_selector(selector):<br/>            self.__shadow_click(selector, timeout)<br/>            return<br/>        if self.browser == &quot;safari&quot;:<br/>            self.wait_for_ready_state_complete()<br/>        if self.__needs_minimum_wait():<br/>            time.sleep(0.022)<br/>        element = page_actions.wait_for_element_visible(<br/>            self.driver,<br/>            selector,<br/>            by,<br/>            timeout=timeout,<br/>            original_selector=original_selector,<br/>        )<br/>        self.__demo_mode_highlight_if_active(original_selector, original_by)<br/>        if scroll and not self.demo_mode and not self.slow_mode:<br/>            self.__scroll_to_element(element, selector, by)<br/>        pre_action_url = self.driver.current_url<br/>        pre_window_count = len(self.driver.window_handles)<br/>        try:<br/>            if (<br/>                by == By.LINK_TEXT<br/>                and (<br/>                    self.browser == &quot;ie&quot; or self.browser == &quot;safari&quot;<br/>                )<br/>            ):<br/>                self.__jquery_click(selector, by=by)<br/>            else:<br/>                href = None<br/>                new_tab = False<br/>                onclick = None<br/>                try:<br/>                    if self.headless and element.tag_name.lower() == &quot;a&quot;:<br/>                        # Handle a special case of opening a new tab (headless)<br/>                        href = element.get_attribute(&quot;href&quot;).strip()<br/>                        onclick = element.get_attribute(&quot;onclick&quot;)<br/>                        target = element.get_attribute(&quot;target&quot;)<br/>                        if target == &quot;_blank&quot;:<br/>                            new_tab = True<br/>                        if new_tab and self.__looks_like_a_page_url(href):<br/>                            if onclick:<br/>                                try:<br/>                                    self.execute_script(onclick)<br/>                                except Exception:<br/>                                    pass<br/>                            current_window = self.driver.current_window_handle<br/>                            self.open_new_window()<br/>                            try:<br/>                                self.open(href)<br/>                            except Exception:<br/>                                pass<br/>                            self.switch_to_window(current_window)<br/>                            return<br/>                except Exception:<br/>                    pass<br/>                # Normal click<br/>                element.click()<br/>        except StaleElementReferenceException:<br/>            self.wait_for_ready_state_complete()<br/>            time.sleep(0.16)<br/>            element = page_actions.wait_for_element_visible(<br/>                self.driver,<br/>                selector,<br/>                by,<br/>                timeout=timeout,<br/>                original_selector=original_selector,<br/>            )<br/>            try:<br/>                self.__scroll_to_element(element, selector, by)<br/>            except Exception:<br/>                pass<br/>            if self.browser == &quot;safari&quot; and by == By.LINK_TEXT:<br/>                self.__jquery_click(selector, by=by)<br/>            else:<br/>                element.click()<br/>        except ENI_Exception:<br/>            self.wait_for_ready_state_complete()<br/>            time.sleep(0.1)<br/>            element = page_actions.wait_for_element_visible(<br/>                self.driver,<br/>                selector,<br/>                by,<br/>                timeout=timeout,<br/>                original_selector=original_selector,<br/>            )<br/>            href = None<br/>            new_tab = False<br/>            onclick = None<br/>            try:<br/>                if element.tag_name.lower() == &quot;a&quot;:<br/>                    # Handle a special case of opening a new tab (non-headless)<br/>                    href = element.get_attribute(&quot;href&quot;).strip()<br/>                    onclick = element.get_attribute(&quot;onclick&quot;)<br/>                    target = element.get_attribute(&quot;target&quot;)<br/>                    if target == &quot;_blank&quot;:<br/>                        new_tab = True<br/>                    if new_tab and self.__looks_like_a_page_url(href):<br/>                        if onclick:<br/>                            try:<br/>                                self.execute_script(onclick)<br/>                            except Exception:<br/>                                pass<br/>                        current_window = self.driver.current_window_handle<br/>                        self.open_new_window()<br/>                        try:<br/>                            self.open(href)<br/>                        except Exception:<br/>                            pass<br/>                        self.switch_to_window(current_window)<br/>                        return<br/>            except Exception:<br/>                pass<br/>            self.__scroll_to_element(element, selector, by)<br/>            if self.browser == &quot;firefox&quot; or self.browser == &quot;safari&quot;:<br/>                if by == By.LINK_TEXT or &quot;contains(&quot; in selector:<br/>                    self.__jquery_click(selector, by=by)<br/>                else:<br/>                    self.__js_click(selector, by=by)<br/>            else:<br/>                element.click()<br/>        except MoveTargetOutOfBoundsException:<br/>            self.wait_for_ready_state_complete()<br/>            try:<br/>                self.__js_click(selector, by=by)<br/>            except Exception:<br/>                try:<br/>                    self.__jquery_click(selector, by=by)<br/>                except Exception:<br/>                    # One more attempt to click on the element<br/>                    element = page_actions.wait_for_element_visible(<br/>                        self.driver,<br/>                        selector,<br/>                        by,<br/>                        timeout=timeout,<br/>                        original_selector=original_selector,<br/>                    )<br/>                    element.click()<br/>        except WebDriverException as e:<br/>            if (<br/>                &quot;cannot determine loading status&quot; in e.msg<br/>                or &quot;unexpected command response&quot; in e.msg<br/>            ):<br/>                pass  # Odd issue where the click did happen. Continue.<br/>            else:<br/>                self.wait_for_ready_state_complete()<br/>                try:<br/>                    self.__js_click(selector, by=by)<br/>                except Exception:<br/>                    try:<br/>&gt;                       self.__jquery_click(selector, by=by)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:442: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, selector = &#x27;span[normalize-space()=&quot;Settings&quot;]:first&#x27;, by = &#x27;xpath&#x27;<br/><br/>    def __jquery_click(self, selector, by=&quot;css selector&quot;):<br/>        &quot;&quot;&quot;Clicks an element using jQuery. Different from using pure JS.&quot;&quot;&quot;<br/>        selector, by = self.__recalculate_selector(selector, by)<br/>        self.wait_for_element_present(<br/>            selector, by=by, timeout=settings.SMALL_TIMEOUT<br/>        )<br/>        selector = self.convert_to_css_selector(selector, by=by)<br/>        selector = self.__make_css_match_first_element_only(selector)<br/>        click_script = &quot;&quot;&quot;jQuery(&#x27;%s&#x27;)[0].click();&quot;&quot;&quot; % selector<br/>&gt;       self.safe_execute_script(click_script)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:11927: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;, script = &#x27;jQuery(\&#x27;span[normalize-space()=&quot;Settings&quot;]:first\&#x27;)[0].click();&#x27;, args = ()<br/>kwargs = {}<br/><br/>    def safe_execute_script(self, script, *args, **kwargs):<br/>        &quot;&quot;&quot;When executing a script that contains a jQuery command,<br/>        it&#x27;s important that the jQuery library has been loaded first.<br/>        This method will load jQuery if it wasn&#x27;t already loaded.&quot;&quot;&quot;<br/>        self.__check_scope()<br/>        self.__check_browser()<br/>        if not js_utils.is_jquery_activated(self.driver):<br/>            self.activate_jquery()<br/>&gt;       return self.driver.execute_script(script, *args, **kwargs)<br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:2883: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;<br/>script = &#x27;jQuery(\&#x27;span[normalize-space()=&quot;Settings&quot;]:first\&#x27;)[0].click();&#x27;, args = (), converted_args = [], command = &#x27;w3cExecuteScript&#x27;<br/><br/>    def execute_script(self, script, *args):<br/>        &quot;&quot;&quot;<br/>        Synchronously Executes JavaScript in the current window/frame.<br/>    <br/>        :Args:<br/>         - script: The JavaScript to execute.<br/>         - \\*args: Any applicable arguments for your JavaScript.<br/>    <br/>        :Usage:<br/>            ::<br/>    <br/>                driver.execute_script(&#x27;return document.title;&#x27;)<br/>        &quot;&quot;&quot;<br/>        if isinstance(script, ScriptKey):<br/>            try:<br/>                script = self.pinned_scripts[script.id]<br/>            except KeyError:<br/>                raise JavascriptException(&quot;Pinned script could not be found&quot;)<br/>    <br/>        converted_args = list(args)<br/>        command = Command.W3C_EXECUTE_SCRIPT<br/>    <br/>&gt;       return self.execute(command, {&quot;script&quot;: script, &quot;args&quot;: converted_args})[&quot;value&quot;]<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:506: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;5403306d44f772bd0aa9f46d19b55de9&quot;)&gt;, driver_command = &#x27;w3cExecuteScript&#x27;<br/>params = {&#x27;args&#x27;: [], &#x27;script&#x27;: &#x27;jQuery(\&#x27;span[normalize-space()=&quot;Settings&quot;]:first\&#x27;)[0].click();&#x27;}<br/><br/>    def execute(self, driver_command: str, params: dict = None) -&gt; dict:<br/>        &quot;&quot;&quot;<br/>        Sends a command to be executed by a command.CommandExecutor.<br/>    <br/>        :Args:<br/>         - driver_command: The name of the command to execute as a string.<br/>         - params: A dictionary of named parameters to send with the command.<br/>    <br/>        :Returns:<br/>          The command&#x27;s JSON response loaded into a dictionary object.<br/>        &quot;&quot;&quot;<br/>        params = self._wrap_value(params)<br/>    <br/>        if self.session_id:<br/>            if not params:<br/>                params = {&quot;sessionId&quot;: self.session_id}<br/>            elif &quot;sessionId&quot; not in params:<br/>                params[&quot;sessionId&quot;] = self.session_id<br/>    <br/>        response = self.command_executor.execute(driver_command, params)<br/>        if response:<br/>&gt;           self.error_handler.check_response(response)<br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:444: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001CEDD9A67C0&gt;<br/>response = {&#x27;status&#x27;: 500, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;javascript error&quot;,&quot;message&quot;:&quot;javascript error: Syntax error, unrecognized...07FF7DF7ED3A3]\\n\\tBaseThreadInitThunk [0x00007FFA3FBD257D+29]\\n\\tRtlUserThreadStart [0x00007FFA4016AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&quot;className&quot;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.JavascriptException: Message: javascript error: Syntax error, unrecognized expression: span[normalize-space()=&quot;Settings&quot;]:first</span><br/><span class="error">E         (Session info: chrome=120.0.6099.225)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF8882B2+55298]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7F5E02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B05AB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B509C]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B732A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72B12B]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7120AA]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72AAA4]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF711E83]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E670A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E7964]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC00AAB+3694587]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC5728E+4048862]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC4F173+4015811]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF9247D6+695590]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF800CE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FCF34]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FD062]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7ED3A3]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFA3FBD257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFA4016AA58+40]</span><br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:249: JavascriptException<br/><br/>During handling of the above exception, another exception occurred:<br/><br/>self = &lt;test_admin.admin_script testMethod=test_delete_data_category&gt;<br/><br/>    def test_delete_data_category(self):<br/>        DataCategory.open_homepage(self)<br/>        DataCategory.login(self)<br/>    <br/>        self.assert_element(DataCategory.halocheck_dashboard_logo)<br/>&gt;       self.click(DataCategory.settings_button)<br/><br/>test_admin.py:294: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:452: in click<br/>    element.click()<br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webelement.py:93: in click<br/>    self._execute(Command.CLICK_ELEMENT)<br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webelement.py:410: in _execute<br/>    return self._parent.execute(command, params)<br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py:444: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001CEDD9A67C0&gt;<br/>response = {&#x27;status&#x27;: 400, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;element click intercepted&quot;,&quot;message&quot;:&quot;element click intercepted: Element ...07FF7DF7ED3A3]\\n\\tBaseThreadInitThunk [0x00007FFA3FBD257D+29]\\n\\tRtlUserThreadStart [0x00007FFA4016AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;<br/>        Checks that a JSON response from the WebDriver does not have an error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value.keys()) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        if status in ErrorCode.NO_SUCH_ELEMENT:<br/>            exception_class = NoSuchElementException<br/>        elif status in ErrorCode.NO_SUCH_FRAME:<br/>            exception_class = NoSuchFrameException<br/>        elif status in ErrorCode.NO_SUCH_SHADOW_ROOT:<br/>            exception_class = NoSuchShadowRootException<br/>        elif status in ErrorCode.NO_SUCH_WINDOW:<br/>            exception_class = NoSuchWindowException<br/>        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:<br/>            exception_class = StaleElementReferenceException<br/>        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:<br/>            exception_class = ElementNotVisibleException<br/>        elif status in ErrorCode.INVALID_ELEMENT_STATE:<br/>            exception_class = InvalidElementStateException<br/>        elif (<br/>            status in ErrorCode.INVALID_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR<br/>            or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER<br/>        ):<br/>            exception_class = InvalidSelectorException<br/>        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:<br/>            exception_class = ElementNotSelectableException<br/>        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:<br/>            exception_class = ElementNotInteractableException<br/>        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:<br/>            exception_class = InvalidCookieDomainException<br/>        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:<br/>            exception_class = UnableToSetCookieException<br/>        elif status in ErrorCode.TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.SCRIPT_TIMEOUT:<br/>            exception_class = TimeoutException<br/>        elif status in ErrorCode.UNKNOWN_ERROR:<br/>            exception_class = WebDriverException<br/>        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:<br/>            exception_class = UnexpectedAlertPresentException<br/>        elif status in ErrorCode.NO_ALERT_OPEN:<br/>            exception_class = NoAlertPresentException<br/>        elif status in ErrorCode.IME_NOT_AVAILABLE:<br/>            exception_class = ImeNotAvailableException<br/>        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:<br/>            exception_class = ImeActivationFailedException<br/>        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:<br/>            exception_class = MoveTargetOutOfBoundsException<br/>        elif status in ErrorCode.JAVASCRIPT_ERROR:<br/>            exception_class = JavascriptException<br/>        elif status in ErrorCode.SESSION_NOT_CREATED:<br/>            exception_class = SessionNotCreatedException<br/>        elif status in ErrorCode.INVALID_ARGUMENT:<br/>            exception_class = InvalidArgumentException<br/>        elif status in ErrorCode.NO_SUCH_COOKIE:<br/>            exception_class = NoSuchCookieException<br/>        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:<br/>            exception_class = ScreenshotException<br/>        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:<br/>            exception_class = ElementClickInterceptedException<br/>        elif status in ErrorCode.INSECURE_CERTIFICATE:<br/>            exception_class = InsecureCertificateException<br/>        elif status in ErrorCode.INVALID_COORDINATES:<br/>            exception_class = InvalidCoordinatesException<br/>        elif status in ErrorCode.INVALID_SESSION_ID:<br/>            exception_class = InvalidSessionIdException<br/>        elif status in ErrorCode.UNKNOWN_METHOD:<br/>            exception_class = UnknownMethodException<br/>        else:<br/>            exception_class = WebDriverException<br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = &quot;{}.{}&quot;.format(frame[&quot;className&quot;], meth)<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class=&quot;sidebar-menu-nav-title&quot;&gt;...&lt;/span&gt; is not clickable at point (86, 505). Other element would receive the click: &lt;div class=&quot;global-loading-container d-flex align-items-center justify-content-center&quot;&gt;...&lt;/div&gt;</span><br/><span class="error">E         (Session info: chrome=120.0.6099.225)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF8882B2+55298]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7F5E02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6B05AB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F7A77]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F5E39]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F3C08]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6F2C8A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E87BF]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7120AA]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E80CF]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7122C0]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF72AAA4]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF711E83]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E670A]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF6E7964]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC00AAB+3694587]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC5728E+4048862]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DFC4F173+4015811]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7DF9247D6+695590]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF800CE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FCF34]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7FD062]</span><br/><span class="error">E       	(No symbol) [0x00007FF7DF7ED3A3]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFA3FBD257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFA4016AA58+40]</span><br/><br/>..\..\..\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py:249: ElementClickInterceptedException<br/> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_bulkcheck</td>
+          <td class="col-duration">38.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_community_watchlist_management</td>
+          <td class="col-duration">64.87</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_community_watchlist_single_upload</td>
+          <td class="col-duration">42.59</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_admin_user</td>
+          <td class="col-duration">31.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_adverse_media_category</td>
+          <td class="col-duration">22.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_data_category</td>
+          <td class="col-duration">22.97</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_tenant_user</td>
+          <td class="col-duration">42.51</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_tenants</td>
+          <td class="col-duration">34.86</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_type</td>
+          <td class="col-duration">23.37</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_admin_user</td>
+          <td class="col-duration">34.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_adverse_media_category</td>
+          <td class="col-duration">23.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_data_category</td>
+          <td class="col-duration">33.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_tenant_user</td>
+          <td class="col-duration">46.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_type</td>
+          <td class="col-duration">32.70</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_resend_verification</td>
+          <td class="col-duration">30.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_resendverification_tenant</td>
+          <td class="col-duration">40.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_reset_password</td>
+          <td class="col-duration">40.36</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_single_riskcheck</td>
+          <td class="col-duration">70.24</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_topup_deduct_credit</td>
+          <td class="col-duration">41.76</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transaction_history_checks</td>
+          <td class="col-duration">47.63</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transaction_history_credits</td>
+          <td class="col-duration">43.59</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transfer_withdraw_credit</td>
+          <td class="col-duration">68.49</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody></table></body></html><p></p><div><b>Status:</b> Test Run Complete: <b>Success!</b> (All tests passed)</div><p></p>

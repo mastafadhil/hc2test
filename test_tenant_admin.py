@@ -18,6 +18,7 @@ class tenant_script(BaseCase):
         createUsercompany.open_homepage(self)
         createUsercompany.login(self)
 
+        self.sleep(10)
         self.click(createUsercompany.companies_button)
         #self.assert_element(createUsercompany.companies_title, createUsercompany.logout_button)
         self.sleep(5)
@@ -52,6 +53,7 @@ class tenant_script(BaseCase):
         DeleteTenantUser.open_homepage(self)
         DeleteTenantUser.login(self)
         
+        self.sleep(10)
         self.click(DeleteTenantUser.companies_button)
         #self.assert_element(DeleteTenantUser.companies_title, DeleteTenantUser.logout_button)
         #self.click(DeleteTenantUser.edit_company)
@@ -80,6 +82,7 @@ class tenant_script(BaseCase):
         
         #self.click(SingleRiskCheck.search_button)
         #self.click(SingleRiskCheck.single_check)
+        self.sleep(10)
         self.assert_element(SingleRiskCheck.single_check_title)
         self.sleep(10)
         self.send_keys(SingleRiskCheck.search_bar, "Steve Young")
@@ -122,6 +125,7 @@ class tenant_script(BaseCase):
         TransferWithdrawCredit2.login(self)
         #self.sleep(60)
 
+        self.sleep(10)
         self.click(TransferWithdrawCredit2.companies_button)
         self.sleep(5)
         #self.click(TransferWithdrawCredit2.jessica)
@@ -155,6 +159,7 @@ class tenant_script(BaseCase):
         #self.assert_elements(InternalBulkCheck.data_button, InternalBulkCheck.users_button, InternalBulkCheck.settings_button)
         
         #self.click(InternalBulkCheck.search_button)
+        self.sleep(10)
         self.click(InternalBulkCheck.bulk_check_button)
         self.sleep(10)
         #self.assert_element(InternalBulkCheck.bulk_check_title)
@@ -276,6 +281,7 @@ class tenant_script(BaseCase):
         ResendVerificationTenant.login(self)
         #self.sleep(60)
 
+        self.sleep(10)
         self.click(ResendVerificationTenant.companies_button)
         self.sleep(5)
         #self.click(ResendVerificationTenant.jessica)
@@ -328,7 +334,7 @@ class tenant_script(BaseCase):
 class createUsercompany(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     companies_title = ("//body//div//div//main//div//div//div//span[contains(text(),'Companies')]")
     back_button = ("//a[normalize-space()='Back']")
     logout_button = ("//a[@data-rb-event-key='/app/logout']")
@@ -379,7 +385,7 @@ class createUsercompany(BaseCase):
 class DeleteTenantUser(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     companies_title = ("//body//div//div//main//div//div//div//span[contains(text(),'Companies')]")
     back_button = ("//a[normalize-space()='Back']")
     logout_button = ("//a[@data-rb-event-key='/app/logout']")
@@ -389,13 +395,13 @@ class DeleteTenantUser(BaseCase):
     edit_company = ("(//*[name()='svg'][@role='img'])[13]")
     users_button = ("//button[normalize-space()='Users']")
     update_company_title = ("//span[@class='hero-title']")
-    edit_user = ("(//*[name()='svg'][@role='img'])[33]")
+    edit_user = ("(//*[name()='svg'][@role='img'])[17]")
     delete_user = ("//button[normalize-space()='Delete']")
     delete_user_confirmation = ("//body/div[@role='dialog']/div/div[1]")
     delete_user_confirm_button = ("//button[normalize-space()='Confirm']")
     delete_user_notification = ("//div[@role='alert']")
     delete_user_notification_close_button = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
-    page_2 = ("(//a[normalize-space()='...'])[1]")
+    page_2 = ("//a[normalize-space()='7']")
 
 
     def open_homepage(self):
@@ -424,7 +430,7 @@ class DeleteTenantUser(BaseCase):
 class TransferWithdrawCredit2(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     companies_title = ('#root > div > aside > div > div.sidebar-menu-body > div > a:nth-child(8) > span')
     back_button = ("//a[normalize-space()='Back']")
     logout_button = ("a[role='button'] span:nth-child(1)")
@@ -486,7 +492,7 @@ class SingleRiskCheck(BaseCase):
     search_results_title = ("//span[normalize-space()='Search Results']")
     new_search_button = ("//span[normalize-space()='Search Results']")
     high_match_result = ("//img[@src='/assets/images/high-match.png']")
-    download_result_1 = ("(//*[name()='svg'][@role='img'])[11]")
+    download_result_1 = ("(//*[name()='svg'][@role='img'])[10]")
     risk_check_tab = ("//button[@role='tab']")
     number_tab = ("//th[normalize-space()='No.']")
     subject_tab = ("//th[normalize-space()='Subject']")
@@ -526,7 +532,7 @@ class createUser(BaseCase):
     homepage_title = ("halocheck")
     halocheck_logo = ("//*[@id='app']/div/div/div[1]/main/div/div/header/div/div/div/div[1]/div/div/div[3]")
     halocheck_dashboard_logo = ("a[title='HaloCheck'] img[alt='HaloCheck']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     email_bar = ("input[name='username']")
     email = ("sooyee.ngoi91@gmail.com")
     password_bar = ("input[name='password']")
@@ -590,7 +596,7 @@ class createUser(BaseCase):
 class InternalBulkCheck(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     halocheck_logo = ("//a[@title='HaloCheck']//img[@alt='HaloCheck']")
     home_button = ("//a[@data-rb-event-key='/app/home']")
     search_button = ("//span[normalize-space()='Search']")
@@ -649,7 +655,7 @@ class communityWatchlist_upload(BaseCase):
     homepage_title = ("halocheck")
     halocheck_logo = ("//*[@id='app']/div/div/div[1]/main/div/div/header/div/div/div/div[1]/div/div/div[3]")
     halocheck_dashboard_logo = ("a[title='HaloCheck'] img[alt='HaloCheck']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     email_bar = ("input[name='username']")
     email = ("sooyee.ngoi91@gmail.com")
     password_bar = ("input[name='password']")
@@ -709,7 +715,7 @@ class communityWatchlist_management(BaseCase):
     homepage_title = ("halocheck")
     halocheck_logo = ("//*[@id='app']/div/div/div[1]/main/div/div/header/div/div/div/div[1]/div/div/div[3]")
     halocheck_dashboard_logo = ("a[title='HaloCheck'] img[alt='HaloCheck']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     email_bar = ("input[name='username']")
     email = ("sooyee.ngoi91@gmail.com")
     password_bar = ("input[name='password']")
@@ -729,7 +735,7 @@ class communityWatchlist_management(BaseCase):
     cw_filter_all_user = ("")
     cw_filter_company = ("")
     cw_filter_all_company = ("")
-    cw_case_1 = ("(//*[name()='svg'][@role='img'])[13]")
+    cw_case_1 = ("(//*[name()='svg'][@role='img'])[12]")
     cw_case_2 = ("")
     cw_status = ("(//div[@class='select__input-container css-19bb58m'])[1]")
     cw_status_active = ("#react-select-4-input")
@@ -815,7 +821,7 @@ class communityWatchlist_bulk_upload(BaseCase):
 class ResendVerificationTenant(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     companies_title = ('#root > div > aside > div > div.sidebar-menu-body > div > a:nth-child(8) > span')
     back_button = ("//a[normalize-space()='Back']")
     logout_button = ("a[role='button'] span:nth-child(1)")
@@ -833,7 +839,7 @@ class ResendVerificationTenant(BaseCase):
     notification = ("//div[@role='alert']")
     notification_close = ("(//*[name()='svg'][@data-icon='xmark'])[1]")
     edit_user1 = ("(//*[name()='path'][@fill='currentColor'])[23]")
-    resend_verification = ("(//*[name()='svg'][@role='img'])[31]")
+    resend_verification = ("(//*[name()='svg'][@role='img'])[32]")
     confirm_resend = ("//button[normalize-space()='Confirm']")
     success_notification = ("(//div[@role='alert'])[1]")
 
@@ -865,7 +871,7 @@ class ResendVerificationTenant(BaseCase):
 class TransactionHistory(BaseCase):
     email_bar = ("input[name='username']")
     password_bar = ("input[name='password']")
-    login_button = ("(//button[@name='action'][normalize-space()='Log In'])[2]")
+    login_button = ("//button[normalize-space()='Log In']")
     transaction_history_sidebar = ("//span[normalize-space()='Transaction History']")
     transaction_history_checks_sidebar =("//span[normalize-space()='Checks']")
     transaction_history_credits_sidebar = ("//span[normalize-space()='Credits']")

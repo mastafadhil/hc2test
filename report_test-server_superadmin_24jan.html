@@ -397,7 +397,7 @@ data: [
 
 {
 name: 'Passed',
-y: 4,
+y: 22,
 color: '#84d474'
 },
 
@@ -424,7 +424,7 @@ color: '#f17476'
             });
             </script>
             
-    <p>Report generated on 28-Dec-2023 at 13:49:26 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 24-Jan-2024 at 11:23:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -440,8 +440,8 @@ color: '#f17476'
         <td>Python</td>
         <td>3.8.3</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 187.27 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>22 tests ran in 918.07 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">22 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -452,11 +452,23 @@ color: '#f17476'
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">test_admin.py::admin_script::test_community_watchlist_single_upload</td>
+          <td class="col-duration">28.35</td>
+          <td class="col-links"><a class="url" href="https://app-testing.halocheck.com.my/index.html#/app/search/singlecheck" target="_blank">URL</a> <a class="image" href="assets/test_admin.py__admin_script__test_community_watchlist_single_upload_1_1.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/test_admin.py__admin_script__test_community_watchlist_single_upload_1_1.png"><img src="assets/test_admin.py__admin_script__test_community_watchlist_single_upload_1_1.png"/></a></div>
+            <div class="log">self = &lt;test_admin.admin_script testMethod=test_community_watchlist_single_upload&gt;<br/><br/>    def test_community_watchlist_single_upload(self):<br/>        communityWatchlist_upload.open_homepage(self)<br/>        communityWatchlist_upload.login(self)<br/>    <br/>        self.sleep(5)<br/>&gt;       self.slow_click(communityWatchlist_upload.cw_sidebutton)<br/><br/>test_admin.py:496: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:531: in slow_click<br/>    self.click(selector, by=by, timeout=timeout, delay=1.05)<br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\base_case.py:300: in click<br/>    element = page_actions.wait_for_element_visible(<br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\page_actions.py:426: in wait_for_element_visible<br/>    timeout_exception(NoSuchElementException, message)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>exception = &lt;class &#x27;selenium.common.exceptions.NoSuchElementException&#x27;&gt;<br/>message = &quot;Element {//span[normalize-space()=&#x27;Community Reference&#x27;]} was not present after 7 seconds!&quot;<br/><br/>    def timeout_exception(exception, message):<br/>        exc, msg = shared_utils.format_exc(exception, message)<br/>&gt;       raise exc(msg)<br/><span class="error">E       selenium.common.exceptions.NoSuchElementException: Message: </span><br/><span class="error">E        Element {//span[normalize-space()=&#x27;Community Reference&#x27;]} was not present after 7 seconds!</span><br/><br/>..\..\..\venv\lib\site-packages\seleniumbase\fixtures\page_actions.py:189: NoSuchElementException<br/> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_b2c_user.py::tenant_script::test_bulkcheck</td>
-          <td class="col-duration">37.45</td>
+          <td class="col-name">test_admin.py::admin_script::test_bulkcheck</td>
+          <td class="col-duration">41.36</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -466,8 +478,8 @@ Warning: chromedriver update needed. Getting it now:
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_b2c_user.py::tenant_script::test_single_riskcheck</td>
-          <td class="col-duration">63.51</td>
+          <td class="col-name">test_admin.py::admin_script::test_community_watchlist_management</td>
+          <td class="col-duration">62.99</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -477,8 +489,21 @@ Warning: chromedriver update needed. Getting it now:
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_b2c_user.py::tenant_script::test_transaction_history_checks</td>
-          <td class="col-duration">47.01</td>
+          <td class="col-name">test_admin.py::admin_script::test_community_watchlist_single_upload</td>
+          <td class="col-duration">38.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_admin_user</td>
+          <td class="col-duration">32.62</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -488,8 +513,195 @@ Warning: chromedriver update needed. Getting it now:
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_b2c_user.py::tenant_script::test_transaction_history_credits</td>
-          <td class="col-duration">35.09</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_adverse_media_category</td>
+          <td class="col-duration">22.61</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_data_category</td>
+          <td class="col-duration">22.53</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_tenant_user</td>
+          <td class="col-duration">43.54</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_tenants</td>
+          <td class="col-duration">33.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_create_type</td>
+          <td class="col-duration">25.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_admin_user</td>
+          <td class="col-duration">31.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_adverse_media_category</td>
+          <td class="col-duration">23.98</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_data_category</td>
+          <td class="col-duration">39.24</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_tenant_user</td>
+          <td class="col-duration">46.94</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_delete_type</td>
+          <td class="col-duration">33.37</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_resend_verification</td>
+          <td class="col-duration">32.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_resendverification_tenant</td>
+          <td class="col-duration">40.16</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_reset_password</td>
+          <td class="col-duration">41.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_single_riskcheck</td>
+          <td class="col-duration">71.06</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_topup_deduct_credit</td>
+          <td class="col-duration">41.70</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transaction_history_checks</td>
+          <td class="col-duration">49.66</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transaction_history_credits</td>
+          <td class="col-duration">45.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>
+Warning: chromedriver update needed. Getting it now:
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_admin.py::admin_script::test_transfer_withdraw_credit</td>
+          <td class="col-duration">66.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
